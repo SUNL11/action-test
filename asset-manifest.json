@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/github-actions-demo/static/css/main.dae1a1dc.css",
+    "main.js": "/github-actions-demo/static/js/main.93fc3cc4.js",
+    "static/media/logo.svg": "/github-actions-demo/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/github-actions-demo/index.html",
+    "main.dae1a1dc.css.map": "/github-actions-demo/static/css/main.dae1a1dc.css.map",
+    "main.93fc3cc4.js.map": "/github-actions-demo/static/js/main.93fc3cc4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dae1a1dc.css",
+    "static/js/main.93fc3cc4.js"
+  ]
+}
