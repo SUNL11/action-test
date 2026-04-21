@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: 测试打包React项目（demo）
 
 # Controls when the workflow will run
 # on:
@@ -37,6 +37,9 @@ name: CI
 
 on: push
 
+permission:
+  contents: write
+
 jobs:
   npm-build:
     name: npm-build工作
@@ -48,10 +51,15 @@ jobs:
       run: pwd
     - name: node.js版本
       run: npm --version
-    - name: 安装依赖
-      run: npm install
-    - name: 项目打包
-      run: npm run build
+    - name: 安装依赖和项目打包
+      run: |
+        npm install
+        npm run build
+    -name: 部署
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: build
 
   # job2:
   #   runs-on: windows-latest
