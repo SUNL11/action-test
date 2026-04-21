@@ -39,12 +39,18 @@ on: push
 
 jobs:
   npm-build:
+    name: npm-build工作
     runs-on: ubuntu-latest
     steps:
+    - name: 读取仓库内容
     - uses: actions/checkout@v4
+    - name: 当前所在目录
     - run: pwd
+    - name: node.js版本
     - run: npm --version
+    - name: 安装依赖
     - run: npm install
+    - name: 项目打包
     - run: npm run build
 
   # job2:
