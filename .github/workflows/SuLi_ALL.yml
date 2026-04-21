@@ -43,15 +43,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 读取仓库内容
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     - name: 当前所在目录
-    - run: pwd
+      run: pwd
     - name: node.js版本
-    - run: npm --version
+      run: npm --version
     - name: 安装依赖
-    - run: npm install
+      run: npm install
     - name: 项目打包
-    - run: npm run build
+      run: npm run build
 
   # job2:
   #   runs-on: windows-latest
